@@ -1,0 +1,16 @@
+[
+{
+  "modid": "NoOpenToLAN",
+  "name": "NoOpenToLAN",
+  "description": "Ban or Notify player to NOT use LAN World because broken.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["kuzuanpa"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

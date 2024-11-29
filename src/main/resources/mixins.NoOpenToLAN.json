@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.7.11",
+  "package": "cn.kuzuanpa.NoOpenToLAN.mixin",
+  "refmap": "mixins.NoOpenToLAN.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "MixinGuiIngameMenu",
+    "MixinGuiShareToLan",
+    "MixinServerShareToLAN"
+  ]
+}
