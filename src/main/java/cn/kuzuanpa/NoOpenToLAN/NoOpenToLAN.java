@@ -13,7 +13,7 @@ public class NoOpenToLAN {
 
     public static final String MODID = "NoOpenToLAN";
 
-    public static boolean disableButton, removeButton, sendHint, guiHint;
+    public static boolean disableButton, removeButton, sendHint, guiHint, failOpenLAN;
 
     public static String hintMessage = "Open To LAN is buggy and shouldn't be used!";
     public static String hintMessage2 = "Please refer to [https://minecraft.fandom.com/wiki/Tutorials/Setting_up_a_Minecraft_Forge_server] to setup a dedicated server";
@@ -28,6 +28,7 @@ public class NoOpenToLAN {
     }
 
     public void loadConfig(){
+        failOpenLAN = config.getBoolean("failOpenLAN", "NoOpenToLAN", true, "causes Open To LAN to always fail");
         removeButton = config.getBoolean("removeButton", "NoOpenToLAN", false, "remove the open to LAN button");
         disableButton = config.getBoolean("disableButton", "NoOpenToLAN", false, "Disable the open to LAN Button");
         sendHint = config.getBoolean("HintAfterOpen", "NoOpenToLAN", true, "Send Hints when player opened to LAN");

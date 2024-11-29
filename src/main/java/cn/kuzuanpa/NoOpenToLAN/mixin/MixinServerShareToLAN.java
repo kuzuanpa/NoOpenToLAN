@@ -19,6 +19,6 @@ public abstract class MixinServerShareToLAN {
 
     @Inject(method = "shareToLAN",at = @At(value = "HEAD"), cancellable = true)
     public void NoOpenToLAN$DisableLANButton(WorldSettings.GameType p_71206_1_, boolean p_71206_2_, CallbackInfoReturnable<String> cir){
-        cir.setReturnValue(null);
+        if(NoOpenToLAN.failOpenLAN)cir.setReturnValue(null);
     }
 }
